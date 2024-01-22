@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin:0;
+}
+body{
+    width:100vw;
+    font-family: 'Inter', sans-serif;
+    color: White;
+    background:hsl(0, 0%, 8%) ;
+    position: absolute;
+}
+h2{
+font-size: 1.2rem;
+}
+p{
+    font-size: 0.69rem;
+}
+.container{
+    position: relative;
+    top:40px;
+    margin: 0 auto;
+    width:25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: hsl(0, 0%, 12%);
+    border-radius: 10px;
+}
+.social-buttons{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+.profile-pic{
+    height: 25%;
+    width:25%;
+    border-radius: 50%;
+    margin: 2rem 0 1.5rem 0;
+}
+.address{
+    margin:1rem 0;
+    color:hsl(75, 94%, 57%);
+}
+.buttons{
+    margin:1rem 0 0  0;
+    background: hsl(0, 0%, 20%);
+    border:none;
+    color:white;
+    padding: 0.7rem  4.5rem;
+    border-radius: 8px;
+    transition: background-color 0.15s , color 0.15s ;
+}
+button:hover{
+    background-color:hsl(75, 94%, 57%) ;
+    color: black;
+}
+@media (max-width:1024px){
+    .container{
+        width:40%;
+    }
+}
+@media (min-width:100px) and (max-width:700px){
+    .container{
+        width:60%;
+    }
+}
+@media (min-width:100px) and (max-width:290px){
+    .container{
+        width:600px;
+    }
+}
